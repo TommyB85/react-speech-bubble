@@ -1,0 +1,53 @@
+@use postcss-nested;
+
+:root {
+  --send-bg: #0b93f6;
+  --send-color: white;
+  --receive-bg: #e5e5ea;
+  --receive-color: black;
+  --page-background: white;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  background-color: var(--page-background);
+}
+
+.container {
+  width: 100%;
+}
+
+.wrapper-left {
+  max-width: 60%;
+  float: left;
+}
+
+.wrapper-right {
+  max-width: 60%;
+  float: right;
+}
+
+p {
+  margin: 1.25rem 1.25rem 0.1rem;
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+  max-width: 60%;
+  word-wrap: wrap;
+}
+
+p.send {
+  background: var(--send-bg);
+  color: var(--send-color);
+}
+
+p.receive {
+  background: var(--receive-bg);
+  color: var(--receive-color);
+}
+
+#Details {
+  font-size: 0.75rem;
+  margin-left: 1.25rem;
+}
